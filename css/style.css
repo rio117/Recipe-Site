@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+
+body{
+    background: #fff;
+    color: #2b2a27;
+    font-family: "Arial", "Helvetica Neue", "sans-serif","Meiryo","Hiragino Sans";
+    line-height: normal;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: #2b2a27;
+}
+
+/*---------------------------------------------------------------
+Recipe
+---------------------------------------------------------------*/
+.flex{
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.flex .image{
+    width: calc(100vw/2);
+}
+
+.flex .image img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.flex .recipe{
+    width: 50%;
+    padding: 40px 5% 0 5%;
+}
+
+.flex .recipe .page-title{
+    font-size: 28px;
+    margin: 18px 0 20px;
+}
+
+.flex .recipe .content-title{
+    border-bottom: solid 1px #ccc;
+    font-size: 16px;
+    padding-bottom: 5px;
+    margin: 40px 0 15px 0;
+}
+
+.flex .recipe .ingredient-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex .recipe .ingredient-list dt{
+    width: 85%;
+    border-bottom: dotted 1px #ccc;
+    padding: 6px 0;
+}
+
+.flex .recipe .ingredient-list dd{
+    width: 15%;
+    border-bottom: dotted 1px #ccc;
+    padding: 6px 0;
+    text-align: right;
+}
+
+.flex .recipe .step-list li{
+    border-bottom: dotted 1px #ccc;
+    padding: 6px 0;
+    margin-left: 20px;
+}
+
+/*---------------------------------------------------------------
+Button
+---------------------------------------------------------------*/
+.btn{   
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.btn a{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    border: solid 1px #2b2a27;
+    padding: 18px 60px;
+}
+
+#footer{
+    text-align: center;
+    font-size: 12px;
+    padding: 20px;
+    color: inherit;
+}
+
+#footer .sns{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+#footer .sns li{
+    margin: 0 10px;
+}
+
+#footer .sns a{
+    color: inherit;
+}
+
+
+/*---------------------------------------------------------------
+sp
+---------------------------------------------------------------*/
+
+@media screen and (max-width: 834px){
+/*---------------------------------------------------------------
+image
+---------------------------------------------------------------*/    
+    .flex{
+        flex-direction: column;
+    }
+    .flex .image{
+        width: 100%;
+    }
+    .flex .image img{
+        height: auto;
+    }
+    .flex .recipe{
+        width: 100%;
+    }
+}
+    
+
+
